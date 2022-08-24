@@ -29,9 +29,28 @@
 | **rm** | Remove, digunakan untuk menghapus directory/file |rm <file> / rmdir <dir> / rm -rf <dir>|
 
 # IP Configuration
-# Mengganti IP
 ## 1. Memeriksa konfigurasi IP
 Gunakan Command `ip a`, disini IP kita menggunakan `192.168.100.208`
+ 
 ![](https://github.com/ademuh/devops13-dumbways-s1/blob/main/day-2/media/1.png?raw=true)
 
-Lalu, kita coba akses file konfigurasi netplan dengan command 'sudo nano /etc/netplan/00-installer-config.yaml
+Lalu, kita coba akses file konfigurasi netplan dengan command `sudo nano /etc/netplan/00-installer-config.yaml`
+  
+![](https://github.com/ademuh/devops13-dumbways-s1/blob/main/day-2/media/1-0.png?raw=true)
+  
+Dari sini kita akan masuk ke window nano 00-installer-config.yaml.
+
+![](https://github.com/ademuh/devops13-dumbways-s1/blob/main/day-2/media/1-1.png?raw=true)
+
+Kita rubah IP lama (.200) menjadi IP baru (.131).
+
+![](https://github.com/ademuh/devops13-dumbways-s1/blob/main/day-2/media/1-2.png?raw=true)
+  
+Jika sudah, jalankan command `sudo netplan apply` lalu cek kembali konfigurasi IP.
+
+![](https://github.com/ademuh/devops13-dumbways-s1/blob/main/day-2/media/1-3.png?raw=true)
+
+Lalu coba kita tes apakah kita masih bisa terhubung internet.
+  
+![](https://github.com/ademuh/devops13-dumbways-s1/blob/main/day-2/media/1-4.png?raw=true)
+
