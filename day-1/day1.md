@@ -134,4 +134,8 @@ Untuk memeriksa apakah kita memiliki koneksi internet, kita akan langsung ping g
 
 ![Ubuntu VM 2](https://github.com/ademuh/devops13-dumbways-s1/blob/main/day-1/media/25.png?raw=true)
 
+Karena tadi kita sudah centang *Docker* pada saat instalasi server, kita juga bisa check apakah sudah terinstal atau belum.
+
+![Ubuntu VM 3](https://github.com/ademuh/devops13-dumbways-s1/blob/main/day-1/media/26.png?raw=true)
+
 
