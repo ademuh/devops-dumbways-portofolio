@@ -28,8 +28,8 @@
 | **sudo su** | Bisa digunakan untuk masuk root atau pindah user | sudo su <user> / sudo su [masuk root]|
 | **rm** | Remove, digunakan untuk menghapus directory/file |rm <file> / rmdir <dir> / rm -rf <dir>|
 
-# IP Configuration
-## 1. Memeriksa konfigurasi IP
+# Merubah IP Address
+
 Gunakan Command `ip a`, disini IP kita menggunakan `192.168.100.208`
  
 ![](https://github.com/ademuh/devops13-dumbways-s1/blob/main/day-2/media/1.png?raw=true)
@@ -54,3 +54,90 @@ Lalu coba kita tes apakah kita masih bisa terhubung internet.
   
 ![](https://github.com/ademuh/devops13-dumbways-s1/blob/main/day-2/media/1-4.png?raw=true)
 
+# Login melalui SSH
+
+Disini, kita akan menggunakan cmd bawaan Windows untuk login kedalam server melalui openSSH.
+Gunakan command `ssh <username>@<IP Address>` untuk masuk kedalam server dan masukkan password.
+
+![](https://github.com/ademuh/devops13-dumbways-s1/blob/main/day-2/media/2.png?raw=true)
+
+> Jika diminta fingerprint access, ketik 'Yes' dan masukkan password.
+
+Jika berhasil, akan keluar seperti ini :
+
+![](https://github.com/ademuh/devops13-dumbways-s1/blob/main/day-2/media/2-1.png?raw=true)
+
+Dari sini, kita jalankan command `sudo apt update` dan `sudo apt upgrade` untuk mengambil list package dari repo server dan mengupgradenya jika dibutuhkan.
+
+![](https://github.com/ademuh/devops13-dumbways-s1/blob/main/day-2/media/2-2.png?raw=true)
+![](https://github.com/ademuh/devops13-dumbways-s1/blob/main/day-2/media/2-3.png?raw=true)
+![](https://github.com/ademuh/devops13-dumbways-s1/blob/main/day-2/media/2-4.png?raw=true)
+
+# Install Apache2 dan Localtunnel
+## Installing Apache2
+
+Gunakan command `sudo apt-get install apache2 `/` sudo apt install apache 2` untuk mengambil package web server apache2.
+
+![](https://github.com/ademuh/devops13-dumbways-s1/blob/main/day-2/media/3.png?raw=true)
+
+Agar kita dapat mem port-forward supaya bisa diakses publik, kita harus menyalakan firewall agar traffic yang lewat port 80 bisa mengakses web server.
+
+Disini, kita menggunakan `sudo ufw enable` untuk menjalankan firewall, dan menggunakan `sudo ufw app list` untuk melihat list web server yang bisa menggunakan firewall tersebut.
+
+![](https://github.com/ademuh/devops13-dumbways-s1/blob/main/day-2/media/3-1.png?raw=true)
+
+Karena kita ingin memberikan apache akses, maka kita jalankan command `sudo ufw allow 'Apache Full'`
+Gunakan `sudo ufw status` untuk melihat app apa saja yang diberikan akses melalui firewall.
+
+![](https://github.com/ademuh/devops13-dumbways-s1/blob/main/day-2/media/3-2.png?raw=true)
+![](https://github.com/ademuh/devops13-dumbways-s1/blob/main/day-2/media/3-3.png?raw=true)
+
+Setelah apache terinstal dengan baik, lakukan check apakah apache berjalan normal
+Gunakan command `systemctl status apache2`
+
+![](https://github.com/ademuh/devops13-dumbways-s1/blob/main/day-2/media/3-4.png?raw=true)
+
+Jika dibuka melalui Direct IP (192.168.100.131) maka akan keluar :
+
+![](https://github.com/ademuh/devops13-dumbways-s1/blob/main/day-2/media/3-5.png?raw=true)
+
+## Install Localtunnel
+Agar web server kita bisa diakses secara publik, kita harus menggunakan Localtunnel.
+Sebelumnya, kita harus coba install `node.js` melalui command `nvm`.
+
+Pertama, kita harus install fitur `curl` agar dapat transfer data melalui command-line via URL.
+Gunakan command `sudo apt install curl`
+
+![](https://github.com/ademuh/devops13-dumbways-s1/blob/main/day-2/media/4.png?raw=true)
+
+Lalu, kita install library `nvm` melalui command :
+`curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash`
+
+![](https://github.com/ademuh/devops13-dumbways-s1/blob/main/day-2/media/4-1.png?raw=true)
+
+Jalankan `exec bash` dan `nvm install 14` untuk menginstall nvm versi 14
+
+![](https://github.com/ademuh/devops13-dumbways-s1/blob/main/day-2/media/4-2.png?raw=true)
+
+Lalu, kita pastikan apakah `node.js` dan `nvm` sudah terinstall
+
+![](https://github.com/ademuh/devops13-dumbways-s1/blob/main/day-2/media/4-3.png?raw=true)
+
+Sekarang, karena `nvm` sudah terinstall, kita juga bisa menggunakan command `npm` sehingga kita bisa install localtunnel dari package yang sudah ada.
+Gunakan command `npm install -g localtunnel`
+
+![](https://github.com/ademuh/devops13-dumbways-s1/blob/main/day-2/media/4-4.png?raw=true)
+
+Jika sudah, command `lt` akan kita gunakan untuk membuat URL untuk di akses melalui port 80 (HTTP)
+Jalankan command 'lt --port 80`
+
+![](https://github.com/ademuh/devops13-dumbways-s1/blob/main/day-2/media/4-5.png?raw=true)
+
+URL Localtunnel akan dibuat dan bisa diakses melalui device apapun yang memperbolehkan port 80.
+
+![](https://github.com/ademuh/devops13-dumbways-s1/blob/main/day-2/media/4-6.png?raw=true)
+![](https://github.com/ademuh/devops13-dumbways-s1/blob/main/day-2/media/4-7.png?raw=true)
+
+Foto di Smartphone :
+
+![](https://github.com/ademuh/devops13-dumbways-s1/blob/main/day-2/media/5.png?raw=true)
