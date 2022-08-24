@@ -140,4 +140,4 @@ URL Localtunnel akan dibuat dan bisa diakses melalui device apapun yang memperbo
 
 Foto di Smartphone :
 
-![](https://github.com/ademuh/devops13-dumbways-s1/blob/main/day-2/media/5.png?raw=true)
+![](https://github.com/ademuh/devops13-dumbways-s1/blob/main/day-2/media/5.jpeg?raw=true)
