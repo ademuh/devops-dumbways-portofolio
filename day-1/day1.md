@@ -2,7 +2,11 @@
 
 DevOps merupakan gabungan antara *Development* dan *Operations*. Engineer DevOps bertanggung jawab untuk menghubungi team development dan operations untuk mengurangi waktu release sebuah fitur/app dan mengurangi tingkat kegagalan serta mempercepat waktu perbaikan jika dibutuhkan.
 
+Disini, saya akan menjelaskan :
+1. Instalasi Ubuntu Server menggunakan VMware
+2. Test Run Ubuntu Server
 
+# Install VMware & Ubuntu Server
 # Step 1 : Menyiapkan ISO & Installer VMware
 ## 1. Untuk ISO ubuntu bisa di download melalui :
 [Get Ubuntu Server | Download | Ubuntu](https://ubuntu.com/download/server)
