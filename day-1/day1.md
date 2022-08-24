@@ -1,4 +1,4 @@
-﻿# Introduction to DevOps
+# Introduction to DevOps
 
 DevOps merupakan gabungan antara *Development* dan *Operations*. Engineer DevOps bertanggung jawab untuk menghubungi team development dan operations untuk mengurangi waktu release sebuah fitur/app dan mengurangi tingkat kegagalan serta mempercepat waktu perbaikan jika dibutuhkan.
 
