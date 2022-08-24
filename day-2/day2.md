@@ -4,7 +4,7 @@
 #Basic Shell Linux Commands
 
 | Command   |      Fungsi  | Usage |
-|:----------:|:-------------:|:--------------------:|
+|:----------:|-------------|:--------------------:|
 | **sudo** |  Digunakan untuk menjalankan sebuah command dengan access root. | sudo apt install apache2 |
 | **mkdir** | Membuat directory baru (Folder) | mkdir <nama dir>
 | **cd** |  Change Directory, digunakan untuk mengganti directory ke lokasi baru | cd <nama dir> / cd .. |
