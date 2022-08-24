@@ -37,10 +37,10 @@ Pilih "Create a new Virtual Machine", lalu *browse* lokasi ISO dari Ubuntu Serve
 Setelah itu, kita akan melakukan alokasi disk space dan resource yang digunakan.
 
 > Resource yang saya gunakan : 
- - 2-core CPU 
- - 2048MB RAM
- - 12.5GB Storage (*Split virtual disk into multiple files*  untuk saving space di PC)
- - Bridge Network Adapter (karena akan menggunakan IP yang ada di PC)
+> - 2-core CPU 
+> - 2048MB RAM
+> - 12.5GB Storage (*Split virtual disk into multiple files*  untuk saving space di PC)
+> - Bridge Network Adapter (karena akan menggunakan IP yang ada di PC)
 
 ![Storage VM](https://github.com/ademuh/devops13-dumbways-s1/blob/main/day-1/media/6.png?raw=true)
 
