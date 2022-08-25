@@ -92,4 +92,26 @@ Kalau ingin ganti _branch_ yang digunakan, bisa menggunakan command `git checkou
 
 ## git clean
 
+Disini, ada file bernama `untracked`, git clean akan membersihkan file yang tidak masuk ke tahap _Staging_
+
+1. `git status` untuk melihat file yang _Untracked_.
+2. menjalankan `git clean -n` untuk mengetahui file apa aja yang akan dihapus.
+3. menjalankan 'git clean -f' (-f = force, memaksakan untuk menghapus file untracked)
+
 ![](https://github.com/ademuh/devops13-dumbways-s1/blob/main/day-4/media/5.png?raw=true)
+
+## git fetch
+
+Fetch bersifat sama dengan _pull_ namun ia tidak langsung melakukan merge melainkan memberikan kita apa yang kira-kira akan dirubah jika kita melakukan _pull_
+
+1. Disini, sudah ada file `fetch_test` didalam branch `master` dan saya menggunakan branch `development`
+2. menjalankan command `git fetch origin master` untuk mendapatkan informasi apa yang berubah.
+3. memfinalisasikan perubahan dengan `git pull origin master`.
+
+![](https://github.com/ademuh/devops13-dumbways-s1/blob/main/day-4/media/6.png?raw=true)
+
+## git log
+
+Disini, `git log` memberikan informasi perubahan pada repository itu beserta messagenya. 
+
+![](https://github.com/ademuh/devops13-dumbways-s1/blob/main/day-4/media/7.png?raw=true)
