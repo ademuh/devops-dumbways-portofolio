@@ -9,6 +9,7 @@ Gunakan command `mkdir nodejs` (directory) dan langsung pindah ke directorynya.
 Setelah itu, run command `npm init -y` untuk menginstal `package.json`.
 ![](https://github.com/ademuh/devops13-dumbways-s1/blob/main/day-3/media/1-2.png?raw=true)
 
+
 Lalu, kita gunakan sebuah script simpel untuk percobaan, dengan membuat file `index.js` dan gunakan `nano index.js` untuk membuat script _"Hello World"_.
 ![](https://github.com/ademuh/devops13-dumbways-s1/blob/main/day-3/media/1-3.png?raw=true)
 
