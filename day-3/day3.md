@@ -1,8 +1,8 @@
-## Application in Server
+# Application in Server
 **Aplikasi / Application** merupakan sebuah software yang digunakan oleh user untuk menjalankan sebuah fungsi yang spesifik yang bisa berjalan secara mandiri, bersamaan dengan sekelompok program.
 
-## Enviroment Application
-# 1. NodeJS
+# Enviroment Application
+## 1. NodeJS
 Sebelum kita bisa menjalankan aplikasi berbasis **NodeJS**, kita harus membuat _enviroment_ di server kita.
 Gunakan command `mkdir nodejs` (directory) dan langsung pindah ke directorynya.
 
@@ -22,7 +22,7 @@ Di web browser akan terlihat seperti ini :
 ![](https://github.com/ademuh/devops13-dumbways-s1/blob/main/day-3/media/1-5.png?raw=true)
 > Note : sebelumnya, command `sudo ufw allow 3000` sudah dijalankan agar port 3000 dapat diakses.
 
-# 2. Golang
+## 2. Golang
 **Golang** atau biasa disebut **Go**, merupakan bahasa yang di develop di _Google_ yang memiliki level yang sama dengan _Java_.
 
 Untuk menggunakan **Golang**, kita harus download enginenya dengan command :
@@ -45,7 +45,7 @@ Lalu kita membuat script golang dengan `touch index.go` dan mengedit isi dari `i
 Kita run scriptnya dengan menggunakan `go run index.go`.
 ![](https://github.com/ademuh/devops13-dumbways-s1/blob/main/day-3/media/2-7.png?raw=true)
 
-# 3. Python3
+## 3. Python3
 **Python3** sudah di include didalam Ubuntu Server, sehingga kita tinggal cek versi yang kita miliki dengan `Python3 -V`.
 ![](https://github.com/ademuh/devops13-dumbways-s1/blob/main/day-3/media/3.png?raw=true)
 
@@ -65,7 +65,7 @@ Kita jalankan script tersebut dengan command `Python3 index.py` lalu akses melal
 ![](https://github.com/ademuh/devops13-dumbways-s1/blob/main/day-3/media/3-6.png?raw=true)
 > Note : sebelumnya, command `sudo ufw allow 5000` sudah dijalankan agar port 5000 dapat diakses.
 
-## Menggunakan PM2 untuk Aplikasi
+# Menggunakan PM2 untuk Aplikasi
 Agar aplikasi dalam server dapat berjalan terus, dibutuhkan sebuah process manager, disini kita akan menggunakan **PM2** untuk menjalankan aplikasi dari **NodeJS** dan **Python3**
 
 Pertama, kita akan lakukan instalasi menggunakan command `npm install pm2@latest -g`
