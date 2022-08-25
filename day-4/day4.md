@@ -70,4 +70,26 @@ Karena sudah di _Commit_, kita _Push_ repository kita dengan command `git push <
 
 ![](https://github.com/ademuh/devops13-dumbways-s1/blob/main/day-4/media/2-9.png?raw=true)
 
-Sekarang, kita akan melakuk
+Sekarang, kita akan menambahkan _branch_ dengan nama _Development_, _Staging_ dan _Production_ dengan menggunakan command `git branch <nama branch>`.
+
+![](https://github.com/ademuh/devops13-dumbways-s1/blob/main/day-4/media/3.png?raw=true)
+
+Jika sudah, bisa kita check _branch_ yang sudah dibuat dengan command `git branch -a`.
+
+![](https://github.com/ademuh/devops13-dumbways-s1/blob/main/day-4/media/3-1.png?raw=true)
+
+Kalau ingin ganti _branch_ yang digunakan, bisa menggunakan command `git checkout <branch>`.
+
+![](https://github.com/ademuh/devops13-dumbways-s1/blob/main/day-4/media/3-2.png?raw=true)
+
+# GIT commands
+
+| Command   |      Fungsi  | Usage |
+|:----------:|-------------|--------------------|
+| **clean** | Membersihkan **Untracked Files** yang ada di directory repository  | git clean [Di dalam repository] |
+| **fetch** | Sama dengan _pull_, namun tidak akan melakukan merge otomatis kedalam repository local | git fetch <remote> <branch> / git fetch --all|
+| **log** | Mengcek history perubahan git tersebut  | git log [Di dalam repository] |
+
+## git clean
+
+![](https://github.com/ademuh/devops13-dumbways-s1/blob/main/day-4/media/5.png?raw=true)
