@@ -69,3 +69,5 @@ Karena repository sudah siap, maka kita akan melakukan _Commit_ dengan `git comm
 Karena sudah di _Commit_, kita _Push_ repository kita dengan command `git push <remote> <branch>` agar repository dapat dipush ke GitHub.
 
 ![](https://github.com/ademuh/devops13-dumbways-s1/blob/main/day-4/media/2-9.png?raw=true)
+
+Sekarang, kita akan melakuk
