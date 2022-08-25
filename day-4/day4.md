@@ -66,4 +66,4 @@ Karena repository sudah siap, maka kita akan melakukan _Commit_ dengan `git comm
 
 ![](https://github.com/ademuh/devops13-dumbways-s1/blob/main/day-4/media/2-8.png?raw=true)
 
-Karena sudah di _Commit_, kita _Push_ 
+Karena sudah di _Commit_, kita _Push_ repository kita dengan command
