@@ -69,7 +69,7 @@ Lalu kita install `flask` melalui `PIP`.
 Setelah itu kita membuat file `index.py` dan membuat script "Hello world!".
 
 ![](https://github.com/ademuh/devops13-dumbways-s1/blob/main/day-3/media/3-4.png?raw=true)
-> Note : disini, `apprun()` diganti ke `app.run(host="0.0.0.0")` karena default dari python itu menggunakan localhost, bukan IP Address.
+> Note : disini, `app.run()` diganti ke `app.run(host="0.0.0.0")` karena default dari _flask_ itu menggunakan localhost, bukan IP Address.
 
 Kita jalankan script tersebut dengan command `Python3 index.py` lalu akses melalui IP dengan port 5000.
 
