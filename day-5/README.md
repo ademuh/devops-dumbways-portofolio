@@ -50,3 +50,16 @@ Jika sudah berhasil, maka dibawah akan ada tulisan _Success_.
 Hasil pembukaan web :
 
 ![](https://github.com/ademuh/devops13-dumbways-s1/blob/main/day-5/media/15.png?raw=true)
+
+## CI/CD Deployment Test
+
+Disini, kita akan merubah _source code_ sedikit untuk mengujicoba apakah CI/CD kita berjalan.
+Kita masuk ke repository, lalu kita pilih sourcecode yang akan diedit.
+
+![](https://github.com/ademuh/devops13-dumbways-s1/blob/main/day-5/media/16.png?raw=true)
+
+![](https://github.com/ademuh/devops13-dumbways-s1/blob/main/day-5/media/17.png?raw=true)
+
+Jika CI/CD kita berjalan dengan baik, maka harusnya pada saat kita merubah repo akan diproses kembali oleh **Cloudflare Pages**
+
+![](https://github.com/ademuh/devops13-dumbways-s1/blob/main/day-5/media/18.png?raw=true)
