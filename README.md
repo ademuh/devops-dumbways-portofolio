@@ -6,3 +6,4 @@ Progress Stage 1 Bootcamp Dumbways DevOps
 - Day 3 **Application in Server**
 - Day 4 **Version Control System**
 - Day 5 **CI/CD Cloudflare Pages**
+- Day 6 **Manage Server with Terminal**
