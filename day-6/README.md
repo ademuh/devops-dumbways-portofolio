@@ -98,6 +98,8 @@ Run
 
 ![](https://github.com/ademuh/devops13-dumbways-s1/blob/main/day-6/media/4.png?raw=true)
 
+![](https://github.com/ademuh/devops13-dumbways-s1/blob/main/day-6/media/4-8.png?raw=true)
+
 ## nmon
 Installation
 `sudo apt install nmon`
