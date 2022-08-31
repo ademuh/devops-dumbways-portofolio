@@ -35,34 +35,41 @@ sudo ufw allow 442
 ## cat
 `cat [nama file]`
 Digunakan untuk memeriksa isi file.
+
 ![](https://github.com/ademuh/devops13-dumbways-s1/blob/main/day-6/media/3.png?raw=true)
 
 `cat > [nama file]`
 Digunakan untuk menyisipkan text kedalam file.
+
 ![](https://github.com/ademuh/devops13-dumbways-s1/blob/main/day-6/media/3-2.png?raw=true)
 
 `cat [file1] [file2] > [file3]`
 Digunakan untuk menggabungkan kedua file1 dan file2.
+
 ![](https://github.com/ademuh/devops13-dumbways-s1/blob/main/day-6/media/3-3.png?raw=true)
 
 ## sed
 `sed -i 's/[text1]/[text2]/g' [file]`
 Merubah text1 ke text2 di file yang ditentukan.
+
 ![](https://github.com/ademuh/devops13-dumbways-s1/blob/main/day-6/media/3-4.png?raw=true)
 
 ## grep
 `grep [text] [file]`
 Mencari text didalam file (gunakan * untuk mencari di directory).
+
 ![](https://github.com/ademuh/devops13-dumbways-s1/blob/main/day-6/media/3-5.png?raw=true)
 ![](https://github.com/ademuh/devops13-dumbways-s1/blob/main/day-6/media/3-6.png?raw=true)
 
 ## sort
 `sort [file]`
 Digunakan untuk sort isi file secara ascending.
+
 ![](https://github.com/ademuh/devops13-dumbways-s1/blob/main/day-6/media/3-7.png?raw=true)
 
 `sort -r [file]`
 Digunakan untuk sort isi file secara descending.
+
 ![](https://github.com/ademuh/devops13-dumbways-s1/blob/main/day-6/media/3-8.png?raw=true)
 
 ## echo
@@ -71,10 +78,12 @@ Digunakan untuk print text pada CLI.
 
 `echo "text" > [file]`
 Digunakan untuk replace isi file dengan sisipan text.
+
 ![](https://github.com/ademuh/devops13-dumbways-s1/blob/main/day-6/media/3-9.png?raw=true)
 
 `echo "text" >> [new file]`
 Digunakan untuk membuat file baru dan mengisinya dengan text.
+
 ![](https://github.com/ademuh/devops13-dumbways-s1/blob/main/day-6/media/3-10.png?raw=true)
 
 # System Montioring
@@ -105,14 +114,16 @@ Run
 
 `lsof`
 Menunjukkan semua file yang sedang berjalan.
+
 ![](https://github.com/ademuh/devops13-dumbways-s1/blob/main/day-6/media/4-3.png?raw=true)
 
 `lsof -u [nama user]`
 Menunjukkan semua file yang sedang berjalan di user.
-[placeholder]
+![](https://github.com/ademuh/devops13-dumbways-s1/blob/main/day-6/media/4-7.png?raw=true)
 
 `lsof -i :3000`
 Menunjukkan semua file yang berjalan di port 3000.
+
 ![](https://github.com/ademuh/devops13-dumbways-s1/blob/main/day-6/media/4-4.png?raw=true)
 
 ## ps
@@ -120,10 +131,12 @@ Menunjukkan semua file yang berjalan di port 3000.
 
 `ps -f -u ads`
 Menunjukkan process yang berjalan di user ads.
+
 ![](https://github.com/ademuh/devops13-dumbways-s1/blob/main/day-6/media/4-5.png?raw=true)
 
 `ps -aux`
 Menunjukkan process yang berjalan di system.
+
 ![](https://github.com/ademuh/devops13-dumbways-s1/blob/main/day-6/media/4-6.png?raw=true)
 
 
