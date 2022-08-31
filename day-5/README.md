@@ -12,7 +12,7 @@ Disini, kita pilih dropdown _Forks_ lalu _Create a new fork_.
 
 Lalu kita sesuaikan nama repository dan description yang diinginkan.
 
-![](https://github.com/ademuh/devops13-dumbways-s1/blob/main/day-5/media/2.png?raw=true)
+![](https://github.com/ademuh/devops13-dumbways-s1/blob/main/day-5/media/2new.png?raw=true)
 
 ![](https://github.com/ademuh/devops13-dumbways-s1/blob/main/day-5/media/3.png?raw=true)
 
