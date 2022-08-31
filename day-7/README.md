@@ -95,6 +95,6 @@ Sampai disini, kita memiliki :
 - Halaman web yang menggunakan **Load Balancing** melalui domain "lb.wayshub-ads.xyz"
 - **Load Balancing** diantara ke-2 server VM di **multipass**
 
-> Note : Karena saya menjalankan instance **multipass** didalam VM, maka di file Sys32/drivers/etc/hosts saya tambahkan IP Server dan domain yang ingin diakses karena _Windows_ tidak mengenal ke-2 IP dari instance **multipass** namun **nginx** mengenal ke-2nya dan dapat diakses melalui IP server dari VMware.
+> Note : Karena saya menjalankan instance **multipass** didalam VM, maka di file _Sys32/drivers/etc/hosts_ saya tambahkan IP Server dan domain yang ingin diakses karena _Windows_ tidak mengenal ke-2 IP dari instance **multipass** namun **nginx** mengenal ke-2nya dan dapat diakses melalui IP server dari VMware.
 
 
