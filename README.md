@@ -1,5 +1,4 @@
-# devops13-dumbways-s1
-Progress Stage 1 Bootcamp Dumbways DevOps
+## Dumbways.id - DevOps Batch 13 Stage 1
 
 - Day 1 **Introduction to DevOps**
 - Day 2 **Basic Shell and Computer Networking**
@@ -8,3 +7,7 @@ Progress Stage 1 Bootcamp Dumbways DevOps
 - Day 5 **CI/CD Cloudflare Pages**
 - Day 6 **Manage Server with Terminal**
 - Day 7 **Web Server and Load Balancing**
+
+## Dumbways.id - DevOps Batch 13 Stage 2
+
+- Day 1 **Cloud Computing w/ IDCH**
