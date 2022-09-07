@@ -11,3 +11,4 @@
 ## Dumbways.id - DevOps Batch 13 Stage 2
 
 - Day 1 **Cloud Computing w/ IDCH**
+- Day 2 **Manage Database & Backend Setup**
