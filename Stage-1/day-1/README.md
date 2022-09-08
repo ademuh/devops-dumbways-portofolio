@@ -16,17 +16,17 @@ Disini, saya akan menjelaskan :
 ## 2. Untuk VMware bisa di download melalui :
 [Download VMware Workstation Player | VMware](https://www.vmware.com/products/workstation-player/workstation-player-evaluation.html)
 
-![Website VMware]((https://github.com/ademuh/devops13-dumbways-ade/blob/main/Stage-1/day-1/media/1.png?raw=true)
+![Website VMware](https://github.com/ademuh/devops13-dumbways-ade/blob/main/Stage-1/day-1/media/1.png?raw=true)
 
 # Step 2 : Instalasi VMware
 ## Lakukan instalasi VMware sebagaimana menginstall aplikasi biasanya.
 
-![Window Installasi VMware]((https://github.com/ademuh/devops13-dumbways-ade/blob/main/Stage-1/day-1/media/1-1.png?raw=true)
+![Window Installasi VMware](https://github.com/ademuh/devops13-dumbways-ade/blob/main/Stage-1/day-1/media/1-1.png?raw=true)
 
 # Step 3 : Membuat Virtual Machine baru
 ## 1. Setelah instalasi & restart PC selesai, VMware bisa langsung dibuka untuk kita membuat Virtual Machine baru.
 
-![Tampilan VMware]((https://github.com/ademuh/devops13-dumbways-ade/blob/main/Stage-1/day-1/media/2.png?raw=true)
+![Tampilan VMware](https://github.com/ademuh/devops13-dumbways-ade/blob/main/Stage-1/day-1/media/2.png?raw=true)
 
 ## 2. Pilih "Create a new Virtual Machine", lalu *browse* lokasi ISO dari Ubuntu Server yang sudah kita download, dan juga inputkan username dan password serta nama Virtual Machine di VMware untuk instalasi Ubuntu tersebut.
 
