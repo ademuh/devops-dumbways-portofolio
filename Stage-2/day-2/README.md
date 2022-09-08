@@ -74,7 +74,7 @@ Kondisi : nginx terinstall, setup di gateway; repo dan nodejs terinstall di apps
 1. `cd /etc/nginx/dumbways`
 2. `sudo nano rproxyb.conf`
 3. Source code :
-`
+{
 server { 
     server_name api.aimingds.studentdumbways.my.id; 
     
@@ -82,7 +82,7 @@ server {
              proxy_pass http://<ip server>:5000;
     }
 }
-`
+}
 
 4. `sudo nginx -t && sudo systemctl restart nginx`
 
