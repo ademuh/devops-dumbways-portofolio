@@ -7,8 +7,11 @@ Pada website IDCH, kita pilih opsi **Virtual Server** dimana kita akan menjalank
 
 Kita tinggal input username, password, nama instance dan juga resource yang ingin digunakan
 > Username      : ads
+> 
 > Nama Instance : ade-appserver;ade-gateway
+> 
 > Resource      : 1 CPU, 1 GB RAM, 20 GB Disk
+
 
 ![](https://github.com/ademuh/devops13-dumbways-ade/blob/main/Stage-2/day-1/media/a.jpg?raw=true)
 ![](https://github.com/ademuh/devops13-dumbways-ade/blob/main/Stage-2/day-1/media/a (1).png?raw=true)
