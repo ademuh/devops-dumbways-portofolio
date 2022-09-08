@@ -33,14 +33,14 @@ Setelah semua konfigurasi selesai, kita dapat mengakses server melalui SSH.
 1. `git clone <URL HTTPS Github>`
 2. `curl` untuk instalasi nvm
 
-![](https://github.com/ademuh/devops13-dumbways-ade/blob/main/Stage-2/day-2/media/a%20(8).png?raw=true)
+![](https://github.com/ademuh/devops13-dumbways-ade/blob/main/Stage-2/day-1/media/a%20(8).png?raw=true)
 
 3. `exec bash`
 4. `nvm install 16`
 5. `npm i pm2 -g`
 6. `pm2 init simple` atau `pm2 ecosystem simple`
 
-![](https://github.com/ademuh/devops13-dumbways-ade/blob/main/Stage-2/day-2/media/a%20(9).png?raw=true)
+![](https://github.com/ademuh/devops13-dumbways-ade/blob/main/Stage-2/day-1/media/a%20(9).png?raw=true)
 
 7. `nano ecosystem.config.js`
 8. Source Code :
@@ -52,16 +52,16 @@ Setelah semua konfigurasi selesai, kita dapat mengakses server melalui SSH.
               }```
 9. `pm2 start ecosystem.config.js`
 
-![](https://github.com/ademuh/devops13-dumbways-ade/blob/main/Stage-2/day-2/media/a%20(11).png?raw=true)
-![](https://github.com/ademuh/devops13-dumbways-ade/blob/main/Stage-2/day-2/media/a%20(10).png?raw=true)
+![](https://github.com/ademuh/devops13-dumbways-ade/blob/main/Stage-2/day-1/media/a%20(11).png?raw=true)
+![](https://github.com/ademuh/devops13-dumbways-ade/blob/main/Stage-2/day-1/media/a%20(10).png?raw=true)
 
 ## Setup dengan DNS Cloudflare
 
 Disini, kita harus membuat address DNS kita terlebih dahulu. Kita masuk kedalam Dashboard Cloudflare lalu akses _Website_ yang ingin kita gunakan, lalu masuk ke menu _DNS_.
 Tekan tombol "add record" lalu isi sesuai dengan sub-domain dan IP appserver kita.
 
-![](https://github.com/ademuh/devops13-dumbways-ade/blob/main/Stage-2/day-2/media/b.png?raw=true)
+![](https://github.com/ademuh/devops13-dumbways-ade/blob/main/Stage-2/day-1/media/b.png?raw=true)
 
 Sehingga, website kita bisa diakses dengan sub-domain dan IPv4 (A) yang telah ditentukan.
 
-![](https://github.com/ademuh/devops13-dumbways-ade/blob/main/Stage-2/day-2/media/a%20(17).png?raw=true)
+![](https://github.com/ademuh/devops13-dumbways-ade/blob/main/Stage-2/day-1/media/a%20(17).png?raw=true)
