@@ -17,7 +17,7 @@ Kita tinggal input username, password, nama instance dan juga resource yang ingi
 
 Melalui Terminal/SSH built-in di IDCH, kita bisa langsung mengakses server yang sudah dibuat.
 
-![](https://github.com/ademuh/devops13-dumbways-ade/blob/main/Stage-2/day-1/media/a (3).png?raw=true)
+![](https://github.com/ademuh/devops13-dumbways-ade/blob/main/Stage-2/day-1/media/a%20(3).png?raw=true)
 
 Karena kita ingin akses server melalui SSH, lalu memasukkan isi `id_rsa.pub` kedalam `authorized_keys` agar server bisa diakses menggunakan private key dan tanpa password.
 
