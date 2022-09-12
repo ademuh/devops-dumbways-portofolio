@@ -12,3 +12,6 @@
 
 - Day 1 **Cloud Computing w/ IDCH**
 - Day 2 **Manage Database & Backend Setup**
+- Day 3 **Docker**
+- Day 4 **Docker Swarm**
+
