@@ -1,0 +1,29 @@
+version: '3.7'
+services:
+ prometheus:
+   depends_on:
+     - nodexp
+   container_name: prometheus-1
+   restart: always
+   image: prom/prometheus:latest
+   stdin_open: true
+   ports:
+     - 9000:9000
+
+ nodexp:
+   container_name: node_exporter
+   image: prom/node_exporter
+   stdin_open: true
+   ports:
+     - 9100:9100
+    
+ grafana:
+   depends_on:
+     - nodexp
+     - prometheus
+   stdin_open: true
+   container_name: Grafana-1
+   image: grafana/grafana
+   stdin_open: true
+   ports:
+     - 3000:3000

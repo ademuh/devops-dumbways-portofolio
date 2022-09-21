@@ -1,0 +1,25 @@
+--- 
+- 
+  become: true
+  gather_facts: false
+  hosts: appserver
+  tasks: 
+    - 
+      name: "Creating User [ade]"
+      ansible.builtin.user: 
+        groups: sudo
+        name: "{{usernem}}"
+        password: "{{passwot}}"
+        state: present
+        system: false
+        append: yes
+        home: /home/({usernem})
+    - 
+      name: "Reloading sshd"
+      systemd: 
+        name: sshd
+        state: reloaded
+  vars: 
+   - usernem: "ade"
+   - passwot: "$6$TaSzosd339yI$Hh/y4YtxryoOnrESQZ2U61ebCSh/DvCYGatsmZ/TnZlC4RJdkLbGturqL0GTzu1wBBBk5VAuU.ymEuByDbJoa1"
+

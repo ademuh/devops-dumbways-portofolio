@@ -1,0 +1,28 @@
+---
+-
+  become: true
+  gather_facts: false
+  hosts: appserver
+  tasks:
+
+    -
+      community.docker.docker_image:
+        name: prom/prometheus
+        source: pull
+      name: "Pulling Prometheus from Docker Hub"
+
+    -
+      ansible.builtin.copy:
+        dest: ~/config/prometheus.yml
+        src: ~/config/prometheus.yml
+      name: "Sending Prometheus Configuration"
+
+    -
+      community.docker.docker_container:
+        exposed_ports:
+          - "9090"
+        image: prom/prometheus
+        name: prometheus_1
+        state: present
+        output_logs: yes
+      name: "Checking Prometheus Docker"

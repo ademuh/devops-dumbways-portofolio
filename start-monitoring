@@ -1,0 +1,23 @@
+- name: Install Server Monitoring on Docker with Ansible
+  hosts: server
+  vars:
+    - locale: /home/ubuntu/ansibleapps
+    - remote: /home/ade/monitoring
+
+  tasks:
+    - name: Sending Prometheus configuration
+      ansible.builtin.copy:
+        src: '{{locale}}/config/prometheus.yml'
+        dest: '{{remote}}/prometheus.yml'
+
+    - name: Send compose.yml to server
+      ansible.builtin.copy:
+        src: '{{locale}}/config/start-monitoring.yml'
+        dest: '{{remote}}/start-monitoring.yml'
+
+    - name: Run Docker Compose
+      community.docker.docker_compose:
+        project_name: Monitoring
+        project_src: '{{remote}}'
+        files: 
+          - start-monitoring.yml

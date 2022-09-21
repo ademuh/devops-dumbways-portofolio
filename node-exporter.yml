@@ -1,0 +1,22 @@
+--- 
+- 
+  become: true
+  gather_facts: false
+  hosts: appserver
+  tasks: 
+
+    - 
+      community.docker.docker_image: 
+        name: prom/node-exporter
+        source: pull
+      name: "Pulling Node Exporter from Docker Hub"
+    - 
+      community.docker.docker_container: 
+        exposed_ports: 
+          - "9100"
+        image: prom/node-exporter
+        name: node_exporter
+        state: present
+        output_logs: yes
+      name: "Checking Node Exporter"
+

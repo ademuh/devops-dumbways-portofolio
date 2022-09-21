@@ -1,0 +1,51 @@
+--- 
+- 
+  become: true
+  gather_facts: false
+  hosts: appserver
+  tasks: 
+    - 
+      apt: 
+        update_cache: true
+      name: "Updating Server"
+    - 
+      apt: 
+        name: 
+          - ca-certificates
+          - curl
+          - gnupg
+          - lsb-release
+      name: "Docker Dependencies"
+    - 
+      apt_key: 
+        url: "https://download.docker.com/linux/ubuntu/gpg"
+      name: "Docker GPG Key"
+    - 
+      apt_repository: 
+        repo: "deb https://download.docker.com/linux/ubuntu focal stable"
+      name: "Docker Repository"
+    - 
+      apt: 
+        name: 
+          - docker-ce
+          - docker-ce-cli
+          - containerd.io
+          - docker-compose-plugin
+      name: "Docker Engine"
+    - 
+      apt: 
+        name: python3-pip
+        state: latest
+        update_cache: true
+      become: true
+      name: "Python Dependencies"
+    - 
+      name: "Docker SDK for Python"
+      pip: 
+        name: docker
+    - 
+      name: "Docker Group Add [ade]"
+      shell: "sudo usermod -aG docker {{user}}"
+  vars: 
+    user: ade
+

@@ -1,0 +1,21 @@
+--- 
+- 
+  become: true
+  hosts: appserver
+  tasks: 
+    - 
+      ansible.builtin.copy: 
+        dest: ~/config/compose-monitoring.yml
+        src: "{{locale}}config/compose-monitoring.yml"
+      name: "Sending Compose Configuration"
+    - 
+      community.docker.docker_compose: 
+        files: 
+          - compose-monitoring.yml
+        project_name: Monitoring
+        project_src: ~/config/compose-monitoring.yml
+      name: "Running Monitoring on top Docker"
+  vars: 
+    - 
+      locale: ~/ansibleapps/
+

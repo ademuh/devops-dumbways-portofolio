@@ -1,0 +1,21 @@
+---
+-
+  become: true
+  gather_facts: false
+  hosts: appserver
+  tasks:
+
+    -
+      community.docker.docker_image:
+        name: grafana/grafana
+        source: pull
+      name: "Pulling Grafana from Docker Hub"
+    -
+      community.docker.docker_container:
+        exposed_ports:
+          - "3000:3000"
+        image: grafana/grafana
+        name: Grafana_1
+        state: present
+        output_logs: yes
+      name: "Checking Grafana Docker"

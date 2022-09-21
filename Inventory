@@ -1,0 +1,5 @@
+[appserver]
+103.191.92.205 ansible_user="ads"
+
+[multipass]
+172.27.198.91
