@@ -14,4 +14,8 @@
 - Day 2 **Manage Database & Backend Setup**
 - Day 3 **Docker**
 - Day 4 **Docker Swarm**
+- Day 5 **CI/CD Jenkins**
+- Day 6 **Monitoring Server**
+- Day 7 **Automation Ansible**
+- Day 8 **Kubernetes**
 
