@@ -217,5 +217,40 @@ pipeline {
 }
 ```
 
+## Notifikasi via Discord
 
+**Notifikasi Repository Github**
 
+1. Mengambil Webhook dari text-channel yang diinginkan.
+![](https://github.com/ademuh/devops13-dumbways-ade/blob/main/Stage-2/kelompok-2/Webhook%20github%20discord/1.png?raw=true)
+![](https://github.com/ademuh/devops13-dumbways-ade/blob/main/Stage-2/kelompok-2/Webhook%20github%20discord/2.png?raw=true)
+
+2. Masuk kedalam web repo github yang diinginkan lalu akses `Settings > Webhooks`
+![](https://github.com/ademuh/devops13-dumbways-ade/blob/main/Stage-2/kelompok-2/Webhook%20github%20discord/3.png?raw=true)
+
+3. Lalu pilih `Add Webhook` lalu tambahkan URL Webhook discord tadi dan menambahkan '/github'
+![](https://github.com/ademuh/devops13-dumbways-ade/blob/main/Stage-2/kelompok-2/Webhook%20github%20discord/4.png?raw=true)
+![](https://github.com/ademuh/devops13-dumbways-ade/blob/main/Stage-2/kelompok-2/Webhook%20github%20discord/5.png?raw=true)
+
+Hasil Notifikasi
+![](https://github.com/ademuh/devops13-dumbways-ade/blob/main/Stage-2/kelompok-2/Webhook%20github%20discord/6.png?raw=true)
+
+**Notifikasi Job Jenkins**
+
+1. Di _Jenkins_, kita install plugin `discordNotifier` dan `Post build task`.
+![](https://github.com/ademuh/devops13-dumbways-ade/blob/main/Stage-2/kelompok-2/Webhook%20jenkins%20discord/1.png?raw=true)
+![](https://github.com/ademuh/devops13-dumbways-ade/blob/main/Stage-2/kelompok-2/Webhook%20jenkins%20discord/2.png?raw=true)
+
+2. Aktifkan plugin dan restart _Jenkins_ agar plugin dapat berjalan.
+![](https://github.com/ademuh/devops13-dumbways-ade/blob/main/Stage-2/kelompok-2/Webhook%20jenkins%20discord/3.png?raw=true)
+
+3. Lalu buat project baru dengan Freestyle Project.
+![](https://github.com/ademuh/devops13-dumbways-ade/blob/main/Stage-2/kelompok-2/Webhook%20jenkins%20discord/4.png?raw=true)
+
+4. Tambahkan gitSSH repo yang diinginkan, lalu save projectnya.
+![](https://github.com/ademuh/devops13-dumbways-ade/blob/main/Stage-2/kelompok-2/Webhook%20jenkins%20discord/5.png?raw=true)
+![](https://github.com/ademuh/devops13-dumbways-ade/blob/main/Stage-2/kelompok-2/Webhook%20jenkins%20discord/6.png?raw=true)
+![](https://github.com/ademuh/devops13-dumbways-ade/blob/main/Stage-2/kelompok-2/Webhook%20jenkins%20discord/7.png?raw=true)
+
+Hasil Notifikasi
+![](https://github.com/ademuh/devops13-dumbways-ade/blob/main/Stage-2/kelompok-2/Webhook%20jenkins%20discord/8.png?raw=true)
