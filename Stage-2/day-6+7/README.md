@@ -35,23 +35,31 @@ Jika kita jalankan, maka akan membuat user baru di server yang dituju (appserver
 ![](https://github.com/ademuh/devops13-dumbways-ade/blob/main/Stage-2/day-6+7/media/2-3.png?raw=true)
 
 ## Ansible : nginx Installation
+
 **nginx.yml**
+
 ![](https://github.com/ademuh/devops13-dumbways-ade/blob/main/Stage-2/day-6+7/media/3-2.png?raw=true)
 
 **ansible-playbook**
+
 ![](https://github.com/ademuh/devops13-dumbways-ade/blob/main/Stage-2/day-6+7/media/3.png?raw=true)
 
 **Hasil**
+
 ![](https://github.com/ademuh/devops13-dumbways-ade/blob/main/Stage-2/day-6+7/media/3-1.png?raw=true)
 
 ## Ansible : Docker Installation
+
 **docker.yml**
+
 ![](https://github.com/ademuh/devops13-dumbways-ade/blob/main/Stage-2/day-6+7/media/4-1.png?raw=true)
 
 **ansible-playbook**
+
 ![](https://github.com/ademuh/devops13-dumbways-ade/blob/main/Stage-2/day-6+7/media/4.png?raw=true)
 
 **Hasil**
+
 ![](https://github.com/ademuh/devops13-dumbways-ade/blob/main/Stage-2/day-6+7/media/4-2.png?raw=true)
 
 ## Monitoring Server : Data Source
@@ -83,9 +91,11 @@ Jika benar, maka akan di notif data source sudah bekerja dengan baik.
 
 ## Monitoring Server : Panel
 Sekarang, kita tambahkan panel didalam grafana dengan memilih "Add a new Panel" lalu bisa kita lanjutkan dengan mengisi metrics yang ingin di ukur.
+
 ![](https://github.com/ademuh/devops13-dumbways-ade/blob/main/Stage-2/day-6+7/media/6-3.png?raw=true)
 
 Lalu kita bisa sesuaikan dengan kebutuhan kita, apa yang ingin dimonitoring dkk.
+
 ![](https://github.com/ademuh/devops13-dumbways-ade/blob/main/Stage-2/day-6+7/media/6-4.png?raw=true)
 
 > Metric - process/resource yang berjalan
