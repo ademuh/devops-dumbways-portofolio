@@ -19,3 +19,8 @@
 - Day 7 **Automation Ansible**
 - Day 8 **Kubernetes**
 
+## Dumbways.id - DevOps Batch 13 Final Task
+
+- dumbwaysdev/literature deployment using node.js and PostgreSQL
+- Integrations with Dockerized images, Monitoring servers and Jenkins pipelining
+- Wildcard SSL Certifications
