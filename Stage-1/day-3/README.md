@@ -14,7 +14,9 @@ Lalu, kita gunakan sebuah script simpel untuk percobaan, dengan membuat file `in
 ![](https://github.com/ademuh/devops13-dumbways-ade/blob/main/Stage-1/day-3/media/1-3.png?raw=true)
 
 Kita juga akan install **ExpressJS** menggunakan Node Package Manager (**NPM**) menggunakan command :
-```npm install express --save```
+```
+npm install express --save
+```
 
 Lalu kita coba jalankan script yang kita sudah buat dengan command `node index.js`
 
