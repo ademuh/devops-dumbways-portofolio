@@ -1,4 +1,4 @@
-# Dumbways.id DevOps 13 - Final Task
+# Dumbways.id DevOps Batch 13 - Final Task
 
 ## Running Servers @ IDCloudHost
 - ads-appserver
